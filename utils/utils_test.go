@@ -14,7 +14,7 @@ func TestValidateRawGithubUrl(t *testing.T) {
 	}{
 		{
 			name: "valid raw github url",
-			url:  "https://https://raw.githubusercontent.com/imua-xyz/imuachain-sdk/refs/heads/main/README.md",
+			url:  "https://https://raw.githubusercontent.com/imua-xyz/imua-avs-sdk/refs/heads/main/README.md",
 		},
 		{
 			name:        "invalid raw github url",

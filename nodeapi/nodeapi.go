@@ -10,7 +10,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/imua-xyz/imuachain-sdk/logging"
+	"github.com/imua-xyz/imua-avs-sdk/logging"
 )
 
 const (

@@ -1,4 +1,4 @@
-package signerv2
+package signer
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
-	sdkEcdsa "github.com/imua-xyz/imuachain-sdk/crypto/ecdsa"
+	sdkEcdsa "github.com/imua-xyz/imua-avs-sdk/crypto/ecdsa"
 )
 
 type SignerFn func(ctx context.Context, address common.Address) (bind.SignerFn, error)

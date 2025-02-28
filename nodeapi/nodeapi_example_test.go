@@ -1,8 +1,8 @@
 package nodeapi_test
 
 import (
-	"github.com/imua-xyz/imuachain-sdk/logging"
-	"github.com/imua-xyz/imuachain-sdk/nodeapi"
+	"github.com/imua-xyz/imua-avs-sdk/logging"
+	"github.com/imua-xyz/imua-avs-sdk/nodeapi"
 )
 
 func ExampleNodeApi() {

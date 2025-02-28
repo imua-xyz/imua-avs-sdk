@@ -13,8 +13,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/imua-xyz/imuachain-sdk/logging"
-	"github.com/imua-xyz/imuachain-sdk/signerv2"
+	"github.com/imua-xyz/imua-avs-sdk/logging"
+	"github.com/imua-xyz/imua-avs-sdk/signer"
 )
 
 var (
@@ -48,7 +48,7 @@ type EthBackend interface {
 
 type SimpleTxManager struct {
 	backend   EthBackend
-	signerFn  signerv2.SignerFn
+	signerFn  signer.SignerFn
 	log       logging.Logger
 	sender    common.Address
 	contracts map[common.Address]*bind.BoundContract
@@ -61,7 +61,7 @@ var _ TxManager = (*SimpleTxManager)(nil)
 func NewSimpleTxManager(
 	backend EthBackend,
 	log logging.Logger,
-	signerFn signerv2.SignerFn,
+	signerFn signer.SignerFn,
 	sender common.Address,
 ) *SimpleTxManager {
 	return &SimpleTxManager{

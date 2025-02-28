@@ -1,4 +1,4 @@
-module github.com/imua-xyz/imuachain-sdk
+module github.com/imua-xyz/imua-avs-sdk
 
 go 1.23.0
 

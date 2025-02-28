@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/imua-xyz/imuachain-sdk/logging"
+	"github.com/imua-xyz/imua-avs-sdk/logging"
 )
 
 var noopLogger = logging.NewNoopLogger()
